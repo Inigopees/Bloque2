@@ -71,7 +71,14 @@
 				return $vuelta;
 			}
 
-			echo "Se ha agregado ".$nombre." con exito al mes ".$mes.". Este mes hay ".insertarCumpleaños($nombre,$mes)." personas que cumplan años."
+			echo "Se ha agregado ".$nombre." con exito al mes ".$mes.". Este mes hay ".insertarCumpleaños($nombre,$mes)." personas que cumplan años.";
+
+			foreach ($calendario as $mes) {
+ 				echo $mes;
+  				foreach ($mes as $cumpleañeros) {
+    				echo $cumpleañeros;
+  				}
+  			}
 		?>
 	</body>
 </html>
